@@ -1,0 +1,7 @@
+firefox:
+ build: .
+ volumes:
+ - /tmp/.X11-unix:/tmp/.X11-unix:ro
+ - ~/.Xauthority:/home/user/.Xauthority:ro
+ environment:
+ - DISPLAY
